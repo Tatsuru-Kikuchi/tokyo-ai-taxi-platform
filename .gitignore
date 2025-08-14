@@ -1,0 +1,12 @@
+node_modules/
+.expo/
+dist/
+*.log
+.env*
+.DS_Store
+backup-*/
+backend/serviceAccountKey.json
+serviceAccountKey.json
+backend/serviceAccountKey.json
+serviceAccountKey.json
+.env*

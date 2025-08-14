@@ -1,0 +1,34 @@
+{
+  "name": "tokyo-ai-taxi-platform",
+  "version": "3.0.0",
+  "description": "Revolutionary AI-powered taxi platform serving nationwide Japan",
+  "private": true,
+  "scripts": {
+    "mobile": "cd apps/mobile && npm start",
+    "mobile:build": "cd apps/mobile && eas build --platform ios --profile production",
+    "mobile:submit": "cd apps/mobile && eas submit -p ios",
+    "backend": "cd backend && npm run dev",
+    "backend:deploy": "cd backend && railway deploy",
+    "test": "npm run test:mobile && npm run test:backend",
+    "setup": "npm run setup:mobile && npm run setup:backend",
+    "setup:mobile": "cd apps/mobile && npm install",
+    "setup:backend": "cd backend && npm install"
+  },
+  "workspaces": [
+    "apps/mobile",
+    "backend",
+    "ai-engine"
+  ],
+  "keywords": [
+    "taxi",
+    "ai",
+    "tokyo",
+    "japan",
+    "transportation",
+    "mobile",
+    "react-native",
+    "expo"
+  ],
+  "author": "Tatsuru Kikuchi",
+  "license": "MIT"
+}
